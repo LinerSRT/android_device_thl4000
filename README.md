@@ -1,11 +1,18 @@
-##For building CM14 based rom's (sprout)
+##To start bulding:
+> repo init -u git://github.com/SeriniTY320/android.git -b cm-14.0
 
-repo init -u git://github.com/SeriniTY320/android.git -b cm-14.0
+> repo sync
 
-repo sync
+> source build/envsetup.sh
 
-source build/envsetup.sh
+> lunch
 
-lunch
+> make -j* otapackage
 
-make -j* otapackage
+
+##Bugs
+- Cam's
+- Flashlight
+- Mobile network (fixable)
+- Bootlop with compiled audiopolicymanager
+- Cant create MTK header in boot
