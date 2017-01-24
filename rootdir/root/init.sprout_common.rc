@@ -377,7 +377,8 @@ on post-fs-data
     chmod 0660 /dev/kd_camera_hw
     chmod 0660 /dev/kd_camera_flashlight
     chmod 0660 /dev/kd_camera_hw_bus2
-    chmod 0660 /dev/FM50AF    
+    chmod 0660 /dev/FM50AF
+    chmod 0660 /dev/AD5823AF    
     chmod 0660 /dev/DW9714AF
     chmod 0660 /dev/DW9718AF    
     chmod 0660 /dev/GAF001AF
@@ -392,7 +393,8 @@ on post-fs-data
     chown system camera /dev/kd_camera_hw
     chown system camera /dev/kd_camera_flashlight
     chown system camera /dev/kd_camera_hw_bus2
-    chown system camera /dev/FM50AF    
+    chown system camera /dev/FM50AF
+    chown system camera /dev/AD5823AF    
     chown system camera /dev/DW9714AF
     chown system camera /dev/DW9718AF    
     chown system camera /dev/GAF001AF
