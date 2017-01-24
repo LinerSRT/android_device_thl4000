@@ -1,10 +1,16 @@
-## For building CM13 based rom's (sprout)
-repo init -u git://github.com/SeriniTY320/android.git -b cm-13.0 
+##To start bulding:
+> repo init -u git://github.com/SeriniTY320/android.git -b cm-13.0 
 
-repo sync
+> repo sync
 
-source build/envsetup.sh
+> source build/envsetup.sh
 
-lunch
+> lunch
 
-make -j* otapackage
+> make -j* otapackage
+
+
+##Bugs
+- Cam's
+- Flashlight
+- Mobile network (fixable)
