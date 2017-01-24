@@ -1,0 +1,3 @@
+add_lunch_combo cm_thl4000-user
+add_lunch_combo cm_thl4000-userdebug
+add_lunch_combo cm_thl4000-eng
