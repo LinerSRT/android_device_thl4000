@@ -113,8 +113,8 @@ PRODUCT_PACKAGES += \
 	Snap
 
 # Web browser
-PRODUCT_PACKAGES += \
-	Gello
+#PRODUCT_PACKAGES += \
+#	Gello
 
 # Wifi
 PRODUCT_PACKAGES += \
