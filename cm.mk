@@ -32,7 +32,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Inherit some common CM stuff.
 
-CM_BUILD := UNNOFICIAL
+CM_BUILD := thl4000
 
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0

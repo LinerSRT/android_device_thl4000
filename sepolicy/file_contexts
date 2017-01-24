@@ -3,8 +3,7 @@
 /system/bin/ccci_fsd          u:object_r:ccci_fsd_exec:s0
 /system/bin/ccci_mdinit       u:object_r:ccci_mdinit_exec:s0
 /system/bin/drvbd             u:object_r:drvbd_exec:s0
-/system/bin/nvram_agent_binder u:object_r:nvram_agent_binder_exec:s0
-/system/bin/nvram_daemon u:object_r:nvram_daemon_exec:s0
+/system/bin/nvram_daemon      u:object_r:nvram_daemon_exec:s0
 /system/xbin/mnld             u:object_r:mnld_exec:s0
 /system/bin/msensord          u:object_r:msensord_exec:s0
 /system/bin/thermal_manager   u:object_r:thermal_manager_exec:s0
@@ -58,9 +57,7 @@
 /dev/kd_camera_hw  u:object_r:camera_device:s0
 /dev/kd_camera_flashlight  u:object_r:camera_device:s0
 /dev/MTK_SMI       u:object_r:camera_device:s0
-/dev/FM50AF        u:object_r:camera_device:s0
 /dev/DW9714AF      u:object_r:camera_device:s0
-/dev/DW9718AF      u:object_r:camera_device:s0
 /dev/GAF001AF      u:object_r:camera_device:s0
 /dev/GAF002AF      u:object_r:camera_device:s0
 /dev/GAF008AF      u:object_r:camera_device:s0
@@ -85,9 +82,9 @@
 /data/amit(/.*)?         u:object_r:amit_data_file:s0
 /data/gps_mnl(/.*)?      u:object_r:mnld_data_file:s0
 /data/misc/touchpanel(/.*)?  u:object_r:touchpanel_data_file:s0
-/data/nvram/APCFG/APRDCL/FILE_VER u:object_r:bt_ver_cfg:s0
-/data/nvram/APCFG/APRDEB/BT_Addr u:object_r:bt_addr_cfg:s0
-/data/nvram(/.*)? u:object_r:nvram_data_file:s0
+/data/nvram(/.*)?        u:object_r:nvram_data_file:s0
+/data/nvram/bt(/.*)?     u:object_r:nvram_bluetooth_data_file:s0
+/data/nvram/media(/.*)?  u:object_r:nvram_media_data_file:s0
 /data/agps_supl(/.*)?    u:object_r:agpsd_data_file:s0
 /sys/class/gpsdrv/gps(/.*)?   u:object_r:sysfs_gpsdrv:s0
 /data/misc/gps(/.*)?   u:object_r:gps_data_file:s0
