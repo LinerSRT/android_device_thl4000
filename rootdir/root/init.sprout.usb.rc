@@ -3,7 +3,7 @@ on boot
     write /sys/class/android_usb/android0/iManufacturer ${ro.product.manufacturer}
     write /sys/class/android_usb/android0/iProduct ${ro.product.model}
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
-    write /sys/class/android_usb/android0/f_mass_storage/inquiry_string "Fly Evo Chic 3"
+    write /sys/class/android_usb/android0/f_mass_storage/inquiry_string "THL4000"
     write /sys/class/android_usb/android0/f_rndis/manufacturer ${ro.product.manufacturer}
     write /sys/class/android_usb/android0/f_rndis/vendorID ${sys.usb.vid}
     write /sys/class/android_usb/android0/f_rndis/wceis 1
