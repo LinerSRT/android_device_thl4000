@@ -1,5 +1,5 @@
 LOCAL_PATH := device/thl/thl4000
- 
+TOLCHAIN_PATH := toolchain/arm-eabi-4.8
 # Board
 TARGET_BOARD_PLATFORM := mt6582
 MTK_BOARD_PLATFORMS := mt6582
@@ -35,7 +35,8 @@ MTK_PLATFORM := mt6582
 MTK_PROJECT := thl4000
 TARGET_KERNEL_SOURCE := kernel/thl
 TARGET_KERNEL_CONFIG := thl4000_defconfig
-KERNEL_TOOLCHAIN_PREFIX := /home/serinity/toolchain/linaro-494-gcc/bin/arm-cortex_a7-linux-gnueabihf-
+KERNEL_TOOLCHAIN := $(TOLCHAIN_PATH)/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 BOARD_KERNEL_CMDLINE :=
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_BASE := 0x10000000
