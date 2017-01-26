@@ -1,0 +1,2 @@
+void _Z8WV_SetupRP9WVSessionRKSsS3_R13WVCredentials14WVOutputFormatmPv(){
+}

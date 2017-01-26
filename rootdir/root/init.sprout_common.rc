@@ -6,6 +6,8 @@ on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
     setprop ro.mtk.hardware mt6582
 
+#export LD_SHIM_LIBS /system/lib/librilmtk.so|libsprout.so:/system/lib/libmtkjpeg.so|libsprout.so:/system/bin/wpa_supplicant|libsprout.so:system/bin/mtk_agpsd|libsprout.so
+
 on init
     export LD_PRELOAD "/system/lib/libxlog.so /system/lib/libsprout.so"
     
@@ -770,13 +772,13 @@ service bluetoothd /system/bin/bluetoothd -n
 #  External Modme control related services
 #
 
-service agpsd /system/bin/mtk_agpsd
-    class main
-    socket agpsd stream 660 gps system
-    socket agpsd2 stream 660 gps inet
-    socket agpsd3 stream 660 gps inet
-    user gps
-    group gps inet sdcard_r sdcard_rw misc radio
+# service agpsd /system/bin/mtk_agpsd
+#     class main
+#     socket agpsd stream 660 gps system
+#     socket agpsd2 stream 660 gps inet
+#     socket agpsd3 stream 660 gps inet
+#     user gps
+#     group gps inet sdcard_r sdcard_rw misc radio
 
 service mnld /system/xbin/mnld
     class main
@@ -905,3 +907,9 @@ service conn_launcher /system/bin/6620_launcher -p /system/etc/firmware/
 #
 # Connectivity related services (End)
 #
+	
+service enableswap /system/bin/sh /enableswap.sh
+    class core
+    oneshot	
+
+

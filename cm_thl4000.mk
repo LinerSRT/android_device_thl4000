@@ -159,24 +159,10 @@ PRODUCT_PACKAGES +=  libstlport
 $(call inherit-product, vendor/thl/thl4000/thl4000-vendor.mk)
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
-	ro.crypto.state=unencrypted \
-	ro.mount.fs=EXT4 \
 	ro.secure=0 \
-	ro.allow.mock.location=0 \
 	ro.debuggable=1 \
-	ro.zygote=zygote32 \
-	camera.disable_zsl_mode=1 \
-	dalvik.vm.dex2oat-Xms=64m \
-	dalvik.vm.dex2oat-Xmx=512m \
-	dalvik.vm.image-dex2oat-Xms=64m \
-	dalvik.vm.image-dex2oat-Xmx=64m \
-	ro.dalvik.vm.native.bridge=0 \
-	ro.hardware=sprout
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-filter=speed \
-    dalvik.vm.dex2oat-swap=false	
+	
 	
 # logd
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/tools/logd:system/bin/logd
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/tools/logd:system/bin/logd

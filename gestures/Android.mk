@@ -1,4 +1,5 @@
-# Copyright (C) 2015 The CyanogenMod Project
+#
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,21 +12,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := \
-	sprout_ril.cpp \
-	sprout_wpa_supplicant.cpp \
-	shim.c \
-	shim2.c \
-	shim3.c \
-	shim4.c \
-	shim5.c \
-	shim6.c 
-LOCAL_SHARED_LIBRARIES := libbinder
-LOCAL_MODULE := libsprout
-LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_CERTIFICATE := platform
+LOCAL_PACKAGE_NAME := Gestures
 
-include $(BUILD_SHARED_LIBRARY)
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    org.cyanogenmod.platform.internal
+
+include $(BUILD_PACKAGE)
