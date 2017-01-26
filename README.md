@@ -1,6 +1,6 @@
 ##For building CM14 based rom's (sprout)
 
-repo init -u git://github.com/SeriniTY320/android.git -b cm-14.0
+repo init -u git://github.com/SeriniTY320/android.git -b cm-14.1
 
 repo sync
 
