@@ -1,5 +1,6 @@
 LOCAL_PATH := device/thl/thl4000
-TOLCHAIN_PATH := toolchain/arm-eabi-4.8
+SOURCE_PATH := cm14
+TOLCHAIN_PATH := /home/$(USER)/$(SOURCE_PATH)/toolchain/arm-eabi-4.8
 # Board
 TARGET_BOARD_PLATFORM := mt6582
 MTK_BOARD_PLATFORMS := mt6582
